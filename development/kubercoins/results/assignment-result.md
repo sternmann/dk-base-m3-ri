@@ -14,8 +14,11 @@ Comandos
 - Clonar Kubercoins : git clone https://github.com/jpetazzo/kubercoins
 - Clonar Kubercoins 2 : git clone https://github.com/jpetazzo/kubercoins
 - docker-compose up -d
-- cd /home/k8s/container.training/dockercoins
-- kubectl apply -f /home/k8s/kubercoins/rng-deployment.yaml
+- kns amarillo
+- vi rng-deployment.yaml
+- kubectl apply -f .
+- kubectl patch svc webui -p '{"spec": {"externalIPs": ["35.86.113.41"]}}'
+ 
   
 Recursos externos
 - Recurso externo
